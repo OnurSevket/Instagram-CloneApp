@@ -29,6 +29,7 @@ public class FragmentHome extends Fragment {
         listView=(ListView)view.findViewById(R.id.listViewHomeShare);
         ListViewAdaptor adaptor=new ListViewAdaptor(getContext(),userShareList);
         listView.setAdapter(adaptor);
+
         return  view;
     }
 }

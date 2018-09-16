@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivProfilePhoto_ListView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tvUserName_ListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="19dp"
+        android:layout_toEndOf="@+id/ivProfilePhoto_ListView"
+        android:layout_toRightOf="@+id/ivProfilePhoto_ListView"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvLocation_ListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvUserName_ListView"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/ivProfilePhoto_ListView"
+        android:layout_toRightOf="@+id/ivProfilePhoto_ListView"
+        android:text="TextView" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/listViewLinear1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="30sp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                app:srcCompat="@drawable/heart_outline" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="30sp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView3"
+                android:layout_marginBottom="20sp"
+                android:layout_marginTop="20sp"
+                app:srcCompat="@drawable/inst_comment" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="30sp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView4"
+                android:layout_marginEnd="20sp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="20sp"
+                android:layout_toEndOf="@+id/imageView4"
+                android:layout_toRightOf="@+id/imageView4"
+                app:srcCompat="@drawable/inst_share" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvLikeCount_ListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/listViewLinear1"
+                android:text="TextView"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

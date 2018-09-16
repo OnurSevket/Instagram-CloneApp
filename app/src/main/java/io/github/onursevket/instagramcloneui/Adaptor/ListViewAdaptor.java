@@ -44,6 +44,9 @@ public class ListViewAdaptor extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        return null;
+        View v=null;
+
+
+        return v;
     }
 }
