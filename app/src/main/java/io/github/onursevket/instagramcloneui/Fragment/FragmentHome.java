@@ -20,16 +20,34 @@ import io.github.onursevket.instagramcloneui.R;
 
 public class FragmentHome extends Fragment {
     ListView listView;
-    ArrayList<UserShare> userShareList=new ArrayList<>();
+    ArrayList<UserShare> userShareList = new ArrayList<>();
+
+    private void init() {
+        userShareList.add(new UserShare(
+                1,
+                1,
+                "https://pbs.twimg.com/profile_images/834394800296046594/RV-RySzn_400x400.jpg",
+                50,
+                "The first Shared",
+                "5 minute",
+                "https://pbs.twimg.com/profile_images/834394800296046594/RV-RySzn_400x400.jpg",
+                "Atasehir/Istanbul",
+                "Onur Ozdemir")
+        );
+
+
+    }
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.fragment_layout_home,container,false);
+        View view = inflater.inflate(R.layout.fragment_layout_home, container, false);
 
-        listView=(ListView)view.findViewById(R.id.listViewHomeShare);
-        ListViewAdaptor adaptor=new ListViewAdaptor(getContext(),userShareList);
+        init();
+        listView = (ListView) view.findViewById(R.id.listViewHomeShare);
+        ListViewAdaptor adaptor = new ListViewAdaptor(getContext(), userShareList);
         listView.setAdapter(adaptor);
 
-        return  view;
+        return view;
     }
 }

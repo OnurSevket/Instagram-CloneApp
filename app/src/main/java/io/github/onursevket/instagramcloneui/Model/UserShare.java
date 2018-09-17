@@ -6,6 +6,26 @@ package io.github.onursevket.instagramcloneui.Model;
 
 public class UserShare {
 
+    public String getUser_name() {
+        return user_name;
+    }
+
+    public void setUser_name(String user_name) {
+        this.user_name = user_name;
+    }
+
+    public UserShare(int user_share_id, int user_id, String user_photo_url, int user_share_like_count, String user_share_content, String user_share_time, String user_share_photo_url, String user_share_location_name, String user_name) {
+        this.user_share_id = user_share_id;
+        this.user_id = user_id;
+        this.user_photo_url = user_photo_url;
+        this.user_share_like_count = user_share_like_count;
+        this.user_share_content = user_share_content;
+        this.user_share_time = user_share_time;
+        this.user_share_photo_url = user_share_photo_url;
+        this.user_share_location_name = user_share_location_name;
+        this.user_name = user_name;
+    }
+
     public int getUser_share_id() {
         return user_share_id;
     }
@@ -70,16 +90,6 @@ public class UserShare {
         this.user_share_location_name = user_share_location_name;
     }
 
-    public UserShare(int user_share_id, int user_id, String user_photo_url, int user_share_like_count, String user_share_content, String user_share_time, String user_share_photo_url, String user_share_location_name) {
-        this.user_share_id = user_share_id;
-        this.user_id = user_id;
-        this.user_photo_url = user_photo_url;
-        this.user_share_like_count = user_share_like_count;
-        this.user_share_content = user_share_content;
-        this.user_share_time = user_share_time;
-        this.user_share_photo_url = user_share_photo_url;
-        this.user_share_location_name = user_share_location_name;
-    }
 
 
 
@@ -94,6 +104,7 @@ public class UserShare {
     private String user_share_time;
     private String user_share_photo_url;
     private String user_share_location_name;
+    private String user_name;
 
 
 }

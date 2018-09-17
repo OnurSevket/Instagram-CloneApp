@@ -37,6 +37,16 @@
         android:layout_toRightOf="@+id/ivProfilePhoto_ListView"
         android:text="TextView" />
 
+    <ImageView
+        android:id="@+id/iVSharePhoto_ListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relativeLayout3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ivProfilePhoto_ListView"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
     <RelativeLayout
         android:id="@+id/relativeLayout3"
         android:layout_width="match_parent"
@@ -52,53 +62,68 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="30sp"
+                android:id="@+id/icon_Like_ListView"
+                android:layout_width="33sp"
                 android:layout_height="wrap_content"
                 android:layout_margin="20sp"
                 app:srcCompat="@drawable/heart_outline" />
 
             <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="30sp"
+                android:id="@+id/icon_Comment_ListView"
+                android:layout_width="27sp"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/imageView3"
+                android:layout_alignTop="@+id/icon_Like_ListView"
                 android:layout_marginBottom="20sp"
                 android:layout_marginTop="20sp"
                 app:srcCompat="@drawable/inst_comment" />
 
             <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="30sp"
+                android:id="@+id/icon_Share_ListView"
+                android:layout_width="25sp"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/imageView4"
+                android:layout_alignTop="@+id/icon_Comment_ListView"
                 android:layout_marginEnd="20sp"
                 android:layout_marginLeft="20sp"
                 android:layout_marginStart="20sp"
                 android:layout_marginTop="20sp"
-                android:layout_toEndOf="@+id/imageView4"
-                android:layout_toRightOf="@+id/imageView4"
+                android:layout_toEndOf="@+id/icon_Comment_ListView"
+                android:layout_toRightOf="@+id/icon_Comment_ListView"
                 app:srcCompat="@drawable/inst_share" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/listViewLinear1"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tvLikeCount_ListView"
+                android:id="@+id/tvLike_Count_ListView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:text="TextView"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvShareText_ListView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="TextView" />
 
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/listViewLinear1"
-                android:text="TextView"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvShareTime_ListView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="TextView" />
         </LinearLayout>
 
 
     </RelativeLayout>
+
 </RelativeLayout>
