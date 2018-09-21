@@ -25,7 +25,7 @@ public class ListViewAdaptor extends BaseAdapter {
     private Context context;
     private ArrayList<UserShare> userShareList;
 
-    public ListViewAdaptor(Context contextArrayList,ArrayList<UserShare> userShareList) {
+    public ListViewAdaptor(Context context,ArrayList<UserShare> userShareList) {
         this.context=context;
         this.layoutInflater=(LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         this.userShareList=userShareList;

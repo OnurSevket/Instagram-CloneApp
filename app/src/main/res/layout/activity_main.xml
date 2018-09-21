@@ -15,8 +15,8 @@
         <fragment
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            class="io.github.onursevket.instagramcloneui.Fragment.FragmentHome"
-            android:id="@+id/container"/>
+            android:id="@+id/container"
+            class="io.github.onursevket.instagramcloneui.Fragment.FragmentHome" />
         
     </LinearLayout>
 
