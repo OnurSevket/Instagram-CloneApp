@@ -37,15 +37,23 @@
         android:layout_toRightOf="@+id/ivProfilePhoto_ListView"
         android:text="TextView" />
 
-    <ImageView
-        android:id="@+id/iVSharePhoto_ListView"
+    <RelativeLayout
+        android:id="@+id/rl2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/relativeLayout3"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/ivProfilePhoto_ListView"
-        app:srcCompat="@mipmap/ic_launcher_round" />
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iVSharePhoto_ListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="181dp"
+            android:layout_marginTop="70dp"
+            app:srcCompat="@mipmap/ic_launcher_round" />
+    </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/relativeLayout3"
